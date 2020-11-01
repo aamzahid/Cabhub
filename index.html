@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <title>Home | CabHub</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <div class="nav__menu-icon" onclick="toggleMenu();">
+                    <div class="menu-icon__line"></div>
+                    <div class="menu-icon__line"></div>
+                    <div class="menu-icon__line"></div>
+                </div>
+                <img class="logo__image" src="img/logo.png" alt="">
+            </div>
+            <ul class="navbar">
+                <div class="nav__menu-icon menu-icon--right" onclick="toggleMenu();">
+                    <div class="menu-icon__line line--left"></div>
+                    <div class="menu-icon__line line--right"></div>
+                </div>
+                <li class="navbar__item navbar__item--selected">Home</li>
+                <li class="navbar__item">About</li>
+                <li class="navbar__item">Features</li>
+                <li class="navbar__item">Blog</li>
+                <li class="navbar__item">Order Now</li>
+                <li class="navbar__item">Contacts</li>                
+            </ul>
+        </nav>
+        <div class="contact">
+            <h3 class="contact__title color yellow">Book Cab Now</h3>
+            <p class="contact__phone">+123 4567 8900</p>
+            <div class="contact__car">
+                <img class="contact__car-image" src="img/taxi-front.png" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="services bg-color yellow">
+        <div class="services-content content">
+            <div class="services__info">
+                    <h3 class="services__header-3">Best In City</h3>
+                    <h1 class="services__header-1">Trusted Cab Services in New York</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nesciunt fugit voluptates
+                        assumenda. Facilis, repellendus quidem! Aliquid culpa saepe, rerum maiores tempore eveniet
+                            accusamus cumque alias vel, reprehenderit incidunt provident?
+                    </p>
+                    <a class="btn btn--black services-info__btn" href="#">Read More</a>
+                </div>
+                <div class="services__contact">
+                    <h3 class="services-contact__header">Book a <span class="color yellow">cab</span></h3>
+                    <form action="" class="services__form">
+                        <label class="services-form__label" for="">
+                            Name<br>
+                            <input class="services-form__input" type="text">
+                        </label>
+                        <label class="services-form__label" for="">
+                            Phone<br>
+                            <input class="services-form__input" type="text">
+                        </label>
+                        <label class="services-form__label" for="">
+                            When<br>
+                            <input class="services-form__input" type="text">
+                        </label>
+                        <label class="services-form__label" for="">
+                            Time<br>
+                            <input class="services-form__input" type="text">
+                        </label>
+                        <label class="services-form__label" for="">
+                            Start <br>
+                            <input class="services-form__input" type="text">
+                        </label>
+                        <label class="services-form__label" for="">
+                            End <br>
+                            <input class="services-form__input" type="text">
+                        </label>
+                        <label class="services-form__label services-form__dropdown" for="">
+                            Choose Vehicle <br>
+                            <input class="services-form__input" type="text" class="">
+                        </label>
+                        <input class="btn btn--black services__form-btn" type="submit" value="submit">
+                    </form>
+                </div>
+        </div>
+    </section>
+    <section class="tariffs">
+        <div class="tariffs-content content">
+            <h3 class="tariffs__header-3 color yellow">Our</h3>
+            <h2 class="tariffs__header-2">Tariffs</h2>
+            <div class="tariffs_prices">
+                <div class="tariffs__tariff">
+                    <img class="tariff__car-image" src="img/product-taxi.png" alt="">
+                    <h3 class="tariff__header">Economy Class</h3>
+                    <p>Quisque sollicitudin feugiat risus, 
+                    eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+                    <p class="tariff__price color yellow">$1.5/M</p>
+                    <a href="#" class="btn btn--yellow">Read More</a>
+                </div>
+                <div class="tariffs__tariff tariff--selected">
+                    <img class="tariff__car-image" src="img/product-taxi.png" alt="">
+                    <h3 class="tariff__header">Standard Class</h3>
+                    Quisque sollicitudin feugiat risus,
+                        eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.
+                    <p class="tariff__price">$1.5/M</p>
+                    <a href="#" class="btn btn--black">Read More</a>
+                    <span class="tariff__star"><img class="tariff__star-image" src="img/star-yellow.png" alt=""></span>
+                </div>
+                <div class="tariffs__tariff">
+                    <img class="tariff__car-image" src="img/product-taxi.png" alt="">
+                    <h3 class="tariff__header">Business Class</h3>
+                    <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.
+                            Phasellus hendrerit, massa efficitur.</p>
+                    <p class="tariff__price color yellow">$1.5/M</p>
+                    <a href="#" class="btn btn--yellow">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features-content content">
+            <h3 class="text-center color yellow">We do best</h3>
+            <h2 class="text-center color white">Than you wish</h2>
+            <div class="features-list">
+                <div class="feature feature-1">
+                    <img src="img/feature-star.png" alt="" class="feature__img">
+                    <div>
+                        <h4 class="feature__title">Home Pickup</h4>
+                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic velit cumque voluptas odit eveniet quidem. Vero itaque, deleniti recusand.</p>        
+                    </div>
+                </div>
+                <div class="feature feature-2">
+                    <img src="img/feature-time.png" alt="" class="feature__img">
+                    <div>
+                        <h4 class="feature__title">Fast booking</h4>
+                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic velit cumque voluptas odit eveniet quidem. Vero itaque, deleniti recusand.</p>        
+                    </div>
+                </div>
+                <div class="feature feature-3">
+                    <img src="img/feature-castle.png" alt="" class="feature__img">
+                    <div>
+                        <h4 class="feature__title">Bonuses for ride</h4>
+                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic velit cumque voluptas odit eveniet quidem. Vero itaque, deleniti recusand.</p>        
+                    </div>
+                </div>
+                <div class="feature feature-4">
+                    <img src="img/feature-gear.png" alt="" class="feature__img">
+                    <div>
+                        <h4 class="feature__title">GPS searching</h4>
+                        <p class="feature__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic velit cumque voluptas odit eveniet quidem. Vero itaque, deleniti recusand.</p>        
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn--yellow">Read More</a>
+        </div>
+    </section>
+    <section class="download-app">
+        <h3 class="color yellow text-center">download</h3>
+        <h2 class="text-center">best cab servies</h2>
+        <div class="download-content content">
+            <div class="download-app__info">
+                <h5 class="download-app-info__header">Download the Cab vouncher app free! Get Exciting New Offers!</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores repudiandae, quidem temporibus quisquam repellendus eos aperiam eum, explicabo optio maxime consequatur neque adipisci provident quae deserunt ab, similique porro.</p>
+                <a href=""><img class="download-app__app-btn" src="img/google-play.png" alt=""></a>
+                <a href=""><img class="download-app__app-btn" src="img/app-store.png" alt=""></a>
+            </div>
+            <div>
+                <img class="download-app__app-image" src="img/app-screen-here.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h3 class="text-center color yellow">Happy Clients'</h3>
+        <h2 class="text-center color white">Testimonials</h2>
+        <div class="testimonials-content content">
+            <div class="testimonials__testimonial">
+                <p class="color white">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.</p>
+                <div class="testimonial__info">
+                    <img class="testimonial__profile-img" src="img/john-doe.png" alt="">
+                    <div>
+                        <p class="color yellow testimonial__name">John Doe</p>
+                        <p class="color white testimonial__job">Business Man</p>                        
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__testimonial">
+                <p class="color white">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.</p>
+                <div class="testimonial__info">
+                    <img class="testimonial__profile-img" src="img/john-doe.png" alt="">
+                    <div>
+                        <p class="color yellow testimonial__name">John Doe</p>
+                        <p class="color white testimonial__job">Business Man</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="content contact-content">
+                    <h3>We are ready to take your call 24 hours, 7 days!</h3>
+                    <p class="contact-us__phone">+123 4567 8900</p>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-content content">
+                <div class="main-footer__section">
+                    <h4 class="main-footer__section-title">About cab Hub</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto iure fugit consequuntur provident. Velit repellat porro repellendus natus temporibus sapiente necessitatibus itaque modi nisi? Dolorum illo quibusdam veritatis soluta?</p>
+                    <ul class="main-footer__social-icons">
+                        <li class="main-footer__social-icon"><a href="#"><img class="social-icon__img" src="img/facebook-logo.png" alt=""></a></li>
+                        <li class="main-footer__social-icon"><a href="#"><img class="social-icon__img" src="img/twitter-logo-silhouette.png" alt=""></a></li>
+                        <li class="main-footer__social-icon"><a href="#"><img class="social-icon__img" src="img/instagram.png" alt=""></a></li>
+                        <li class="main-footer__social-icon"><a href="#"><img class="social-icon__img" src="img/google-plus.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="main-footer__section">
+                    <h4 class="main-footer__section-title">Download</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto iure fugit consequuntur provident. Velit repellat porro repellendus natus temporibus sapiente necessitatibus itaque modi nisi? Dolorum illo quibusdam veritatis soluta?</p>
+                    <ul class="main-footer__app-icons">
+                        <li class="app-icon"><a href="#">Android Users</a><img class="app-icon__img" src="img/android-logo.png" alt=""></li>
+                        <li class="app-icon"><a href="#">Apple Users</a><img class="app-icon__img" src="img/apple-icon.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="main-footer__section">
+                    <h4 class="main-footer__section-title">Contact</h4>
+                    <ul class="main-footer__address-info">
+                        <li class="address-info__item"><img src="" alt="">+123, Main Street, Your City, New York, USA 789456</li>
+                        <li class="address-info__item"><img src="" alt="">+123 4567 8900</li>
+                        <li class="address-info__item"><img src="" alt=""><a href="#">contact@cabhub.com</a></li>
+                        <li class="address-info__item"><img src="" alt=""><a href="#">www.cabhub.com</a></li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+    <script>
+
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            const isMenuOpen = navbar.classList.contains('navbar--show');
+
+            isMenuOpen ? navbar.classList.remove('navbar--show') : navbar.classList.add('navbar--show');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+@font-face {
+    font-family: Lato;
+    src: 'fonts/Lato-Regular.ttf';
+    font-weight: normal
+}
+
+@font-face {
+    font-family: Lato;
+    src: 'fonts/Lato-Bold.ttf';
+    font-weight: bold
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+:root {
+    --main-yellow: #ffc61a;
+    --h1: 50px;
+    --h2: 44px;
+    --h3: 35px;
+    --h4: 25px;
+    --h5: 20px;
+    --content-width: 80%;
+}
+a {
+    color: var(--main-yellow);
+    text-decoration: none;
+}
+.bg-color.yellow {
+    background-color: var(--main-yellow);
+}
+.color.yellow {
+    color: var(--main-yellow);
+}
+.color.white {
+    color: #fff;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn--black {
+    background-color: #000;
+    color: #fff;
+}
+.btn--yellow {
+    background-color: var(--main-yellow);
+    color: #000;
+}
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6  {
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: bold;
+} 
+h1 {
+    font-size: var(--h1);
+}
+h2 {
+    font-size: var(--h2);
+}
+h3 {
+    font-size: var(--h3);
+}
+h4 {
+    font-size: var(--h4);
+}
+h5 {
+    font-size: var(--h5);
+}
+header {
+    background-image: url('../img/background-header.jpg');
+}
+.content {
+    margin: auto;
+    width: var(--content-width);
+    display: grid;
+}
+.logo {
+    width: 150px;
+}
+.logo__image {
+    width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    grid-area: navbar;
+    color: #fff;
+}
+.navbar__item{
+    list-style: none;
+    padding: 5px 15px;
+    margin: 0px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar__item--selected {
+    border-radius: 17px;
+    background-color: var(--main-yellow);
+    color:#000;
+}
+.contact {
+    text-align: center;
+    padding-top: 40px;
+}
+.contact__title {
+    font-size: var(--h3);
+}
+.contact__phone {
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+}
+.contact__car {
+    width: 40%;
+    margin: auto;
+}
+.contact__car-image {
+    transform: translateY(15%);
+    width: 100%;
+}
+.services {
+    padding: 80px 0 40px 0; 
+}
+.services-content {
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 40px;
+}
+.services-contact__header {
+    background-color: #171717;
+    color: #fff;
+    padding: 10px 20px;
+}
+.services__header-1 {
+    padding:10px 0 20px 0;
+}
+.services-info__btn {
+    margin-top: 20px;
+}
+.services__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+}
+.services-form__label {
+    font-weight: bold;
+}
+.services-form__input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 5px;
+    color: rgb(94, 94, 94);
+    font-size: 20px;
+}
+.services-form__dropdown {
+    grid-column: 1 / -1;
+}
+.services__form-btn {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+.tariffs {
+    padding: 40px 0;
+}
+.tariffs__header-3 {
+    text-align: center;
+}
+.tariffs__header-2 {
+    text-align: center;
+}
+.tariffs_prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding-top: 20px;
+}
+.tariffs__tariff {
+    padding: 20px;
+    text-align: center;
+}
+.tariff__price {
+    font-size: 30px;
+    padding: 20px 0;
+}
+.tariffs__tariff {
+    background-color: #f5f4f2;
+    position: relative;
+}
+.tariff--selected {
+    background-color: var(--main-yellow);
+}
+.tariff__star {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 60px;
+}
+.tariff__star-image {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.tariff__header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.tariff__car-image {
+    width: 100%;
+}
+.features {
+    background-image: url('../img/background-girls.jpg');
+    padding: 40px 0;
+}
+.features-content {
+    justify-content: center;
+    justify-items: center;
+}
+.features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 60px;
+    padding: 40px;
+}
+.feature {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+}
+.feature__title {
+    color: var(--main-yellow);
+}
+.feature__text {
+    color: #fff;
+    grid-column: 2;
+    grid-template-rows: 1;
+}
+.download-app {
+    padding-top: 40px;
+}
+.download-content {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    justify-content: center;
+}
+.download-app__info {
+    align-self: center;
+}
+.download-app-info__header {
+    padding-bottom: 20px;
+}
+.download-app__app-btn {
+    width: 100%;
+    max-width: 180px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.download-app__app-image {
+    height: 500px;
+    position: relative;
+    transform: translateY(23%);
+    z-index: -1;
+}
+.testimonials {
+    background-image: url('../img/background-people.jpg');
+    padding: 40px 0;
+}
+.testimonials-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 40px;
+    padding: 40px 0;
+}
+.testimonials__testimonial {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 10px;
+    margin: 20px;
+}
+.testimonial__profile-img {
+    margin-top: 20px;
+}
+.testimonial__info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    align-content: center;
+    grid-gap: 10px;
+}
+.contact-us {
+    background-color: var(--main-yellow);
+    padding: 60px 0;
+}
+.contact-content {
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.contact-us__phone {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.main-footer {
+    background-image: url('../img/background-footer.jpg');
+    padding: 40px 0;
+}
+.footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    color: #fff;
+    grid-gap: 40px;
+}
+.main-footer__section-title {
+    position: relative;
+    margin: 40px 0 20px 0;
+    padding-bottom: 20px;
+}
+.main-footer__section-title::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-yellow);
+}
+.main-footer__social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+}
+.main-footer__social-icon {
+    margin: 10px;
+}
+.main-footer__social-icon:first-child {
+    margin-left: 0;
+}
+.social-icon__img {
+    width: 25px;
+}
+.main-footer__app-icons {
+    list-style: none;
+}
+.app-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.app-icon__img {
+    width: 25px;
+    margin-left: 20px;
+}
+.main-footer__address-info {
+    list-style: none;
+}
+.address-info__item {
+    margin: 20px 0;
+}
+@media (max-width: 950px) {
+    h1 {
+        font-size: calc(var(--h1) - 10px);
+    }
+    h2 {
+        font-size: calc(var(--h2) - 10px);        
+    }
+    h3 {
+        font-size: calc(var(--h3) - 10px);        
+    }
+    h4 {
+        font-size: calc(var(--h4) - 10px);        
+    }
+    h5 {
+        font-size: calc(var(--h5) - 3px);        
+    }
+    .logo {
+        padding-top: 10px;
+        padding-bottom: 12px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        position: fixed;
+        background: #000000;
+        z-index: 1;
+    }
+    .logo__image {
+        width: 120px;
+        margin: auto;        
+    }
+    .menu-icon--right {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .menu-icon__line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0 0 10px;
+    }
+    .line--left {
+        transform: rotate(-45deg) translate(-7px, 6px);
+        background-color: #000;
+    }
+    .line--right {
+        transform: rotate(45deg);
+        background-color: #000;
+    }
+    .nav__menu-icon {
+        cursor: pointer;
+    }
+    .nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        width: 30%;
+        left: 0;
+        transform: translateX(-120%);
+        position: fixed;
+        height: 100vh;
+        z-index: 1;
+        background-color: var(--main-yellow);
+        transition: all 0.5s;
+    }
+    .navbar--show {
+        transform: translateX(0);
+    }
+    .navbar__item {
+        margin: 0;
+        padding: 14px 10px;
+    }
+    .navbar__item--selected {
+        margin-top: 50px;
+        border-radius: 0;
+        color: #fff;
+    }
+    .navbar__item:hover {
+        background-color: #000;
+    }
+    .contact {
+        padding-top: 80px;
+    }
+    .contact__car-image {
+        transform: translate(-20%,15%);
+        width: 60vw;
+    }
+    .features-list {
+        padding: 20px 0;
+    }
+    .content {
+        width: 90%;
+    }
+    .features-list,
+    .tariffs_prices,
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .download-app__app-image {
+        width: 100%;
+        height: auto;
+    }
+    .download-app__info {
+        padding-top: 20px;
+        display: grid;
+        justify-items: center;
+    }
+    .testimonials-content {
+        grid-gap: 0;
+        padding: 0;
+    }
+}
+@media (min-width: 768px) {
+    .services-content {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media (max-width: 767px) {
+    .contact__title {
+        font-size: 7vw;
+    }
+    .contact__phone {
+        font-size: 11vw;
+    }
+    .navbar {
+        width: 35%;
+    }
+}
+@media (max-width: 569px) {
+    .contact-us__phone {
+        font-size: 11vw;
+    }
+    .navbar {
+        width: 45%;
+    }
+}
